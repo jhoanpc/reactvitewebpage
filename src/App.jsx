@@ -1,12 +1,13 @@
-import { useState } from 'react'
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import HomePage from './app/home/HomePage'
 const App = () => {
   return (
     <div>
-      <p>Hello world</p>
+      <p>Hola App</p>
+      <HomePage></HomePage>
     </div>
   )
 }
