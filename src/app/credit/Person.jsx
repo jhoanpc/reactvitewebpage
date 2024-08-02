@@ -11,7 +11,7 @@ const Person = () => {
   function handleSubmit(e){
     e.preventDefault();
   
-    fetch('http://127.0.0.1:8000/api/people/', {
+    fetch('https://tafcarbackendapi.onrender.com/api/people/', {
       method:'POST', 
       headers:{
         'Content-Type':'application/vnd.api+json'},
