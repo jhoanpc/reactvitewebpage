@@ -331,37 +331,8 @@ const Activity = ()=>{
       const handleSubmit = (event)=>{
         event.preventDefault()
 
-        /*console.log(JSON.stringify({"data":{
-            "type":"DetailsEconomicActivity",
-            "attributes":{
-                "typeactivity": formData.typeactivity,
-                "bussinesname": formData.bussinesname,
-                "bussinessaddres": formData.bussinessaddres,
-                "bussinessphone": formData.bussinessphone,
-                "jobposition": formData.jobposition,
-                "startdatejob": formData.startdatejob,
-                "contrattype": formData.contrattype,
-                "timejobpos": formData.timejobpos,
-                "pensionfund": formData.pensionfund,
-                "startDatePF": formData.startDatePF,
-                "rut": formData.rut,
-                "timeactivityrut": formData.timeactivityrut,
-                "bussinesnameind1": formData.bussinesnameind1,
-                "nitind1": formData.nitind1,
-                "phoneind1": formData.phoneind1,
-                "bussinesnameind2": formData.bussinesnameind2,
-                "nitind2": formData.nitind2,
-                "phoneind2": formData.phoneind2,
-                "bussinesnameind3": formData.bussinesnameind3,
-                "nitind3": formData.nitind3,
-                "phoneind3": formData.phoneind3,
-                "totalincome":formData.totalincome,
-                "rentdel": formData.rentdel,
-                "totalexpenses": formData.totalexpenses,
-                "totalassets": formData.totalassets,
-                "person":formData.id
-            }
-        }}));*/
+        setFormData(Object.fromEntries(Object.entries(formData).map(([key,value]) => [key, value == "" ? null: value])));
+
 
         fetch('https://tafcarbackendapi.onrender.com/api/activity/', {
             method:'POST',
