@@ -203,7 +203,7 @@ const PersonalDetailsForm = () => {
     event.preventDefault();
     // Handle form submission
 
-    fetch('http://127.0.0.1:8000/api/details/', {
+    fetch('https://tafcarbackendapi.onrender.com/api/details/', {
       method:'POST', 
       headers:{
         'Content-Type':'application/vnd.api+json'},
