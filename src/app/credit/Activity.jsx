@@ -363,7 +363,7 @@ const Activity = ()=>{
             }
         }}));*/
 
-        fetch('http://127.0.0.1:8000/api/activity/', {
+        fetch('https://tafcarbackendapi.onrender.com/api/activity/', {
             method:'POST',
             headers:{
                 'Content-Type':'application/vnd.api+json'},
