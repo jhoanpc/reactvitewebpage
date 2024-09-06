@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 import FormSelect from '../utils/FormSelect';
 import FormInput from '../utils/FormInput';
-import FormDatePicker from '../utils/FormDatePicker';
+
 
 
 
@@ -282,14 +282,7 @@ const PersonalDetailsForm = () => {
                   onChange={onChange} ></FormInput>
                 )
               }else{
-                 if ( input.type == 'date'){
-                    <FormDatePicker 
-                    key={input.id} {...input} 
-                    label={input.label}
-                    value={formData[input.name]}
-                    onChange={onChange}
-                    ></FormDatePicker>
-                 }else{
+                 
                   return (
                     <FormSelect 
                     key={input.id} {...input} 
@@ -297,7 +290,7 @@ const PersonalDetailsForm = () => {
                     value={formData[input.name]}
                     onChange={onChange} ></FormSelect>
                   )
-                 }
+                 
                 
               }
             }
