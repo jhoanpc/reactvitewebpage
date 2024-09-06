@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+
+span{
+  font-size: 14px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+
