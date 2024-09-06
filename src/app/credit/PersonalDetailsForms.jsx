@@ -202,6 +202,7 @@ const PersonalDetailsForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle form submission
+  setFormData(Object.fromEntries(Object.entries(formData).map(([key,value]) => [key, value == "" ? null: value])));
 
     fetch('https://tafcarbackendapi.onrender.com/api/details/', {
       method:'POST', 
